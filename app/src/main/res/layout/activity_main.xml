@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainScreenActivity"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView"
+        android:textColor="#ff009688"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageButton"
+        android:src="@drawable/fa"
+        android:scaleType="fitXY"
+        android:onClick="onClickFaceRec"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="50dp"
+        android:background="#ffffff"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="58dp"
+        android:layout_height="92dp"
+        android:id="@+id/imageButton2"
+        android:src="@drawable/ma2"
+        android:scaleType="fitXY"
+        android:onClick="onClickMobileAut"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp" />
+
+    <ImageButton
+        android:layout_width="77dp"
+        android:layout_height="97dp"
+        android:id="@+id/imageButton3"
+        android:src="@drawable/fpa"
+        android:onClick="onClickFingerPrint"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="#ffffff"
+        android:layout_below="@+id/imageButton2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Face Recognition"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/imageButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Mobile Authentication"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/imageButton2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Fingerprint Authentication"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/imageButton3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageButton4"
+        android:src="@drawable/about"
+        android:onClick="onClickSettings"
+        android:scaleType="fitXY"
+        android:background="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/imageButton"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android:id="@+id/registerFinger"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="REGISTER YOUR FINGER FIRST"
+        android:layout_marginLeft="0dp"
+        android:layout_below="@+id/listView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/identifyDialogWithIndex"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="START IDENTIFY"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/registerFinger"
+        android:layout_alignEnd="@+id/registerFinger" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="1dp"
+        android:layout_height="1dp" >
+    </ListView>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageView5"
+        android:layout_alignTop="@+id/identifyDialogWithIndex"
+        android:layout_toEndOf="@+id/identifyDialogWithIndex"
+        android:layout_marginLeft="5dp" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageView6"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@+id/registerFinger"
+        android:layout_alignStart="@+id/imageView5" />
+
+
+</RelativeLayout>
+
+
+
+
+
+
